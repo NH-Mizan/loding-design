@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loader</title>
+
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 400px;
+            width: 400px;
+            margin: 0 auto;
+            background-color: rgba(137, 43, 226, 0.369);
+            text-align: center;
+            border-radius: 10px;
+        }
+        .loader-item{
+        
+            border: 10px solid #ffffff;
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            margin-top: 50px;
+            border-radius: 50%;
+            border-bottom: 10px solid aqua;
+            /* border-width: 0.1em 0.1em 0 0; */
+            animation: loader-animation 2s infinite linear;
+        }
+        @keyframes loader-animation{
+            0%{
+                transform: rotate(0 deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        /* .loader-dis{
+           
+            width: 100%;
+            height: 100%;
+        } */
+
+
+    </style>
+</head>
+<body>
+   <section>
+    <div class="container">
+        <h1> My own  Loaader</h1>
+        <div class="loader-item">
+            <div class="loader-dis">
+
+            </div>
+        </div>
+    </div>
+   </section>
+    
+</body>
+</html>
